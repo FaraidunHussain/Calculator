@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+ </head>
+<body>
+        <form name="myForm" id="myForm">
+          <table>
+            <tr>
+              <td>
+              <input type="text" id="calculate" name="calculate">
+               </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" name="  7  "  value="  7  " onClick="Cal(7)">
+                <input type="button" name="  8  "  value="  8  " onClick="Cal(8)">
+                <input type="button" name="  9  "  value="  9  " onClick="Cal(9)">
+                <input type="button" name="  +  "  value="  + " onClick="Cal('+')">
+                <br>
+                <input type="button" name="  4  "  value="  4  " onClick="Cal(4)">
+                <input type="button" name="  5  "  value="  5  " onClick="Cal(5)">
+                <input type="button" name="  6  "  value="  6  " onClick="Cal(6)">
+                <input type="button" name="  -  "  value="  -  " onClick="Cal('-')">
+                <br>
+                <input type="button" name="  1  "  value="  1  " onClick="Cal(1)">
+                <input type="button" name="  2  "  value="  2  " onClick="Cal(2)">
+                <input type="button" name="  3  "  value="  3  " onClick="Cal(3)">
+                <input type="button" name="  *  "  value="  x  " onClick="Cal('*')">
+                <br>
+                <input type="button" name=" C   "  value="  C  " onClick="reset();">
+                <input type="button" name="  0  "  value="  0  " onClick="Cal(0)">
+                <input type="button" name="  =  "  value="  =  " onClick="result();">
+                <input type="button" name="  /  "  value="  /  " onClick="Cal('/')">
+                </td>
+            </tr>
+          </table>
+        </form>
+        <script type = "text/javascript">      
+          function Cal(value){  
+              document.getElementById("calculate").value += value;  
+          }  
+          function result(){  
+              document.getElementById("calculate").value = eval(document.getElementById("calculate").value);  
+         }  
+          function reset(){  
+             document.getElementById("calculate").value = '';  
+         }  
+          </script>
+    </body>
+    </html>
+    
